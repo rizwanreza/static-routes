@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) || "Untitled" %></title>
+    <link rel="stylesheet" href="/stylesheets/application.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <%= yield(:head) %>
+  </head>
+  <body>
+    <div id="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
